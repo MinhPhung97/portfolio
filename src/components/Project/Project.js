@@ -45,7 +45,7 @@ function Project() {
           </div>
         </div>
         <div className="cardItem">
-          <a className="cardImg" href="https://marvelous-faun-38a45f.netlify.app/" target="_blank">
+          <a className="cardImg" href="https://vin-portfolio.vercel.app/" target="_blank">
             <img src={img.portfolio} alt="" />
           </a>
           <p>
@@ -53,7 +53,7 @@ function Project() {
           </p>
           <div className="cardLink">
             <span>#reactjs #sass</span>
-            <a href="https://github.com/MinhPhung97/vintube" target="_blank">
+            <a href="https://github.com/MinhPhung97/portfolio" target="_blank">
               <i className="bi bi-github" />
               GitHub
             </a>
