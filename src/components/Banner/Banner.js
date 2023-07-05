@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './banner.scss';
 import Typed from 'typed.js';
 import bannerImg from '../../assets/img/header-img.svg';
+import cv from '../../assets/file/NguyenMinhPhung-FrontEndDevelope-CV.pdf';
 
 function Banner() {
   const el = useRef(null);
@@ -26,11 +27,11 @@ function Banner() {
         <h1>Hello! It's Me.</h1>
         <h2>And I'm</h2>
         <span ref={el} />
-        <p>
-          I am a diligent and passionate individual when it comes to technology. I possess a strong
-          knowledge base and the ability to quickly solve problems. I am open to listening and
-          learning in order to continually improve my skills.
-        </p>
+        <div className="download">
+          <a href={cv} download>
+            Download CV
+          </a>
+        </div>
       </div>
       <div className="bannerImg">
         <img src={bannerImg} alt="" className="animate__animated animate__zoomIn" />

@@ -37,12 +37,17 @@
       font-size: 40px;
     }
 
-    p {
-      margin-top: 16px;
-      font-weight: 500;
-      font-style: italic;
-      max-width: 600px;
-      color: rgba(255, 255, 255, 0.6);
+    .download {
+      margin-top: 24px;
+
+      a {
+        padding: 12px 24px;
+        background: linear-gradient(
+          90.21deg,
+          rgba(170, 54, 124, 0.5) -5.91%,
+          rgba(74, 47, 189, 0.5) 111.58%
+        );
+      }
     }
   }
 
@@ -55,6 +60,7 @@
 
   @media (min-width: 768px) and (max-width: 992px) {
     padding: 120px 20px;
+
     .bannerImg {
       img {
         height: 250px;
@@ -84,6 +90,10 @@
   @media (max-width: 767px) {
     padding: 120px 20px;
     flex-direction: column;
+
+    .bannerImg {
+      margin-top: 20px;
+    }
   }
 
   @media (max-width: 567px) {
