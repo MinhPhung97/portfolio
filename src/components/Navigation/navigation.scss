@@ -1,0 +1,176 @@
+//---------------------- Home --------------------------------------------
+#home {
+  padding: 24px 80px;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  z-index: 99;
+
+  &.scrolled {
+    background-color: #121212;
+    padding: 12px 80px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 8px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+
+      span {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+
+      .navbarLink {
+        a {
+          padding: 0 32px;
+          opacity: 0.55;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        & .active {
+          opacity: 1;
+        }
+      }
+
+      .navbarSocial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          position: relative;
+          display: block;
+          text-align: center;
+          line-height: 40px;
+          height: 40px;
+          width: 40px;
+          font-size: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+          background: rgba(217, 217, 217, 0.1);
+          margin: 0 4px;
+          transition: 0.3s ease-in-out;
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            transform: scale(0);
+            transition: 0.3s ease-in-out;
+          }
+
+          &:hover {
+            i {
+              filter: brightness(0);
+            }
+
+            &::before {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+
+    i {
+      font-size: 32px;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 12px 30px;
+
+    &.scrolled {
+      padding: 16px 30px;
+    }
+
+    .menu {
+      display: block;
+    }
+
+    & .container .navbar {
+      display: none;
+    }
+  }
+
+  // @media (max-width: 567px) {
+  //   &.scrolled {
+  //     padding: 10px;
+  //   }
+  // }
+}
+
+//---------------------- Drawer --------------------------------------------
+.drawer {
+  padding: 0 12px;
+  background-color: #121212 !important;
+
+  .drawerLogo {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #fff;
+
+    span {
+      font-weight: 900;
+      margin-left: 4px;
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .drawerContent {
+    margin-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #fff;
+
+    a {
+      display: block;
+      padding: 12px 0;
+    }
+  }
+
+  .drawerLink {
+    a {
+      font-size: 20px;
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+}

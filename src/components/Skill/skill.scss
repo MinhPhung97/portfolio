@@ -1,0 +1,65 @@
+#skill {
+  padding: 0 80px;
+  background-image: url('../../assets/img/footer-bg.png');
+
+  li.react-multi-carousel-item.react-multi-carousel-item--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 40px;
+    text-align: center;
+    background-color: #151515;
+    border-radius: 60px;
+    transform: translateY(-70px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .skillTitle {
+      span {
+        font-size: 65px;
+        font-weight: 900;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    .skillIcon {
+      margin-top: 60px;
+
+      .iconItem {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        background-color: #4158d0;
+        background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+        border-radius: 50%;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        font-weight: 900;
+        background-color: #121212;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+
+    .container {
+      border-radius: 30px;
+      padding: 20px 10px;
+    }
+  }
+}

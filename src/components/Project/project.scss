@@ -1,0 +1,92 @@
+#project {
+  padding: 40px 80px 80px 80px;
+  text-align: center;
+
+  .projectTitle {
+    span {
+      font-size: 65px;
+      font-weight: 900;
+    }
+
+    p {
+      margin-top: 12px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .projectCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .cardItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 12px;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 15px;
+      border-radius: 8px;
+
+      p {
+        margin: 12px 0;
+        text-align: left;
+      }
+
+      .cardImg {
+        display: block;
+
+        img {
+          display: inline-block;
+        }
+      }
+
+      .cardLink {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          display: inline-block;
+          max-width: 200px;
+          color: rgba(255, 255, 255, 0.6);
+          text-align: left;
+        }
+
+        a {
+          position: relative;
+          display: inline-block;
+          padding: 4px 8px;
+          border-radius: 4px;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          transition: 0.3s ease-in-out;
+
+          i {
+            margin-right: 4px;
+          }
+
+          &:hover {
+            color: blue;
+            border-color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 20px 20px 40px 20px;
+
+    & .projectCard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px 20px 40px 20px;
+
+    & .projectCard {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
