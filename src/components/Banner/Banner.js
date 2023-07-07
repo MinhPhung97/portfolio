@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './banner.scss';
 import Typed from 'typed.js';
 import bannerImg from '../../assets/img/header-img.svg';
-import cv from '../../assets/file/NguyenMinhPhung-FrontEndDevelope-CV.pdf';
+import cv from '../../assets/file/CV_Nguyen_Minh_Phung_Front_End_Developer_en.pdf';
 
 function Banner() {
   const el = useRef(null);
